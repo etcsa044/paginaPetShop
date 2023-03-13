@@ -1,0 +1,387 @@
+/*________________GENERALES */
+/* ________Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* backgrounds colors */
+
+header,
+#boron-comedero,
+#boton-enviar,
+.suscripcion {
+  background-color: #f0a83e;
+}
+
+/* ________Top */
+
+.top {
+  background-color: #222222;
+  width: 100%;
+  height: 20px;
+  color: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.opciones-region {
+  display: flex;
+  justify-content: space-evenly;
+  height: 12px;
+  width: 150px;
+  margin-right: 52px;
+}
+
+.opciones-region div {
+  display: flex;
+  align-items: flex-end;
+  font-size: 10px;
+  height: 12px;
+  gap: 5px;
+}
+
+.top h3 {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  margin-left: 90px;
+}
+
+/* ________________HEADER */
+
+.header {
+  color: #ffffff;
+  width: 100%;
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+nav {
+  font-size: 13px;
+  font-weight: 400;
+  height: 15px;
+  width: 350px;
+  margin-right: 40px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ________________MAIN */
+/* ________Slide */
+
+.slide {
+  width: 100%;
+  height: 410px;
+  background-image: url(../IMG/fondoHeader.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* contenedor de textos */
+.slide #slide-texto {
+  height: 85px;
+  width: 380px;
+  margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* contenedor boton comederos */
+#slide-boton {
+  width: 380px;
+  display: flex;
+  justify-content: center;
+}
+
+.slide h2 {
+  background-color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  width: 100%;
+  height: 54px;
+  padding-top: 9px;
+  text-align: center;
+}
+
+.slide h4 {
+  color: #3c2313;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.slide a {
+  background-color: #f0a83e;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  height: 49px;
+  width: 145px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 12px;
+  padding-top: 15px;
+}
+
+/* ________Productos destacados */
+
+.destacados {
+  margin: 30px auto;
+  height: 530px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Logo huella */
+
+/* Main H2 */
+main h2 {
+  color: #3c2313;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+main nav {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+}
+
+main nav a {
+  color: #666666;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+/* contenedor Cards */
+.contenedor-cards {
+  height: 312px;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+/* cards */
+.card {
+  background-color: #fbfaf6;
+  color: #3c2313;
+  height: 325px;
+  width: 280px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.card .precio {
+  color: #f0a83e;
+}
+
+/* ________Form */
+
+.form {
+  height: 270px;
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.form h2 {
+  color: #3c2313;
+  width: 100%;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.form input {
+  background-color: #3c2313;
+  color: #f3f3f3;
+  height: 40px;
+  border-radius: 15px;
+  padding-left: 14px;
+}
+
+.form input::placeholder {
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 400;
+}
+
+.contenedor-botones {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 15px;
+}
+
+.form-boton {
+  color: #ffffff;
+  background-color: #8a8787;
+  font-size: 16px;
+  font-weight: 400;
+  height: 34px;
+  width: 120px;
+  border: none;
+  border-radius: 15px;
+}
+
+/* ________Suscripción */
+
+.suscripcion {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 47px;
+}
+
+#article-mensaje {
+  color: #ffffff;
+  display: flex;
+  gap: 10px;
+}
+
+/* input */
+.suscripcion input {
+  height: 40px;
+  width: 290px;
+  padding-left: 9px;
+  border: none;
+  border-radius: 15px;
+}
+
+.suscripcion input::placeholder {
+  color: #a0a0a0;
+  font-size: 9px;
+  font-weight: 400;
+}
+/* boton */
+
+.suscripcion button {
+  color: #ffffff;
+  background-color: #3c2313;
+  font-size: 9px;
+  font-weight: 700;
+  height: 34px;
+  width: 75px;
+  border-radius: 15px;
+}
+
+
+/* ________________FOOTER */
+
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #3c2313;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.contacto{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.datos-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 280px;
+    width: 320px;
+    gap: 10px;
+}
+
+.contenedor-contacto{
+    height: 66px;
+    width: 300px;
+    display: flex;
+    gap: 20px;
+}
+
+.logo-contacto{
+    height: 57px;
+    width: 58px;
+}
+
+
+
+
+.detalle h3{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.detalle p{
+    color: #8a8787;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+.derechos{
+    background-color: #222222;
+    color: #ffffff;
+    height: 20px;
+    width: 100%;
+    align-self: flex-end;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 4px;
+}
